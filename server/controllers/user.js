@@ -21,17 +21,20 @@ const getAllUsers = asyncHandler(async (req, res) => {
 });
 
 const registerUser = asyncHandler(async (req, res) => {
+  console.log('hiiiis')
   const { username, gmail, password } = req.body;
   if (!username || !gmail || !password) {
     throw new CustomError("Specify the required fields!", 400);
   }
+  console.log('hello')
   const UserExists = await UserModel.findOne({
     $or: [{ username: username }, { gmail: gmail }],
   });
+  console.log(UserExists)
   if (UserExists) {
     throw new CustomError("Username or gmail already exist!", 400);
   }
-
+  console.log("here")
   const newUser = await UserModel.create({
     username,
     gmail,
@@ -46,7 +49,7 @@ const registerUser = asyncHandler(async (req, res) => {
       image: newUser.image,
       friends: newUser.friends,
       token: token,
-      verified: newUser.verified,
+      verified: true,
     });
   } else {
     throw new CustomError("Failed to create user!", 400);

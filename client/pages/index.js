@@ -62,10 +62,10 @@ const Home = () => {
         config
       );
       localStorage.setItem("userInfo", JSON.stringify(data));
-      if (!data.verified) {
-        window.location.href = "./otp";
-        return;
-      }
+      // if (!data.verified) {
+      //   window.location.href = "./otp";
+      //   return;
+      // }
       toast({
         title: "Logged in Successfully!",
         status: "success",
