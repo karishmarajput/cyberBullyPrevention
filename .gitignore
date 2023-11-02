@@ -7,6 +7,9 @@
 .pnp.js
 /node_modules
 
+#model file
+/modelserv/model.pt
+
 #my-local-files
 /client/pages/sample
 
