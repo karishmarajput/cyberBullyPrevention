@@ -18,7 +18,7 @@ import Axios from "axios";
 function MessageBox({ socket }) {
   const dispatch = useDispatch();
   const color = useColorModeValue("#fff", "#000");
-  const bg = useColorModeValue("#000", "#fff");
+  const bg = useColorModeValue("#187b94", "#fff");
   const bgBox = useColorModeValue("#383737", "#d8d8d8");
   const toast = useToast();
   const { SETCHAT, ADDMESSAGE } = bindActionCreators(actionCreators, dispatch);

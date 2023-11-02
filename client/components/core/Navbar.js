@@ -126,16 +126,6 @@ function Navbar(props) {
         variant="link"
         color={color}
         size={"lg"}
-        icon={<AiFillGithub />}
-        onClick={() => {
-          window.location.href =
-            "https://github.com/karishmarajput/cyberBullyPrevention";
-        }}
-      />
-      <IconButton
-        variant="link"
-        color={color}
-        size={"lg"}
         icon={<AiOutlineSync />}
         _focus={{ animation: animation }}
         onClick={() => {

@@ -22,11 +22,11 @@ export default function (props) {
   const dispatch = useDispatch();
   const [text, setText] = useState(props.message);
   const [updated, setUpdated] = useState(props.updated);
-  const color = useColorModeValue("#000", "#fff");
-  const userbg = useColorModeValue("#cfc9c9", "#1c2c3c");
-  const userhoverbg = useColorModeValue("#bbb9b9", "#2a3a49");
-  const friendhoverbg = useColorModeValue("#8fa4b1", "#09090b");
-  const friendbg = useColorModeValue("#a0b7c7", "#161512");
+  const color = useColorModeValue("#fff", "#fff");
+  const userbg = useColorModeValue("#31a9c4", "#1c2c3c");
+  const userhoverbg = useColorModeValue("#227d99", "#2a3a49");
+  const friendhoverbg = useColorModeValue("#18942c", "#09090b");
+  const friendbg = useColorModeValue("#5ecc70", "#161512");
   // const deletedbg = useColorModeValue("#000", "#000");
   const { EDITMESSAGE, DELETEMESSAGE } = bindActionCreators(
     actionCreators,
