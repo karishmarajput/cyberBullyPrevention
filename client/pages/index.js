@@ -94,7 +94,7 @@ const Home = () => {
   return (
     <ColorChange>
       <NextSeo
-        title="WebChatApp - Login"
+        title="KindNet"
         description="Login in to the web chat app to start messaging to others"
       />
       <Flex
