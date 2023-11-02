@@ -26,7 +26,7 @@ import { NextSeo } from "next-seo";
 const Home = () => {
   const color = useColorModeValue("#000", "#fff");
   const bg = useColorModeValue("gray.200", "#2e2b2b");
-  const profileColor = useColorModeValue("whiteAlpha.900", "#292626");
+  const profileColor = useColorModeValue("whiteAlpha.900", "#31a9c4");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
@@ -118,8 +118,8 @@ const Home = () => {
           pt={"10"}
           bgColor={profileColor}
         >
-          <Avatar bg="teal.500" />
-          <Heading color="teal.400">Welcome</Heading>
+          <Avatar bg="#31a9c4" />
+          <Heading color="#31a9c4">Welcome</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={loginUser}>
               <Stack
@@ -174,7 +174,8 @@ const Home = () => {
                   borderRadius={0}
                   type="submit"
                   variant="solid"
-                  colorScheme="teal"
+                  bgColor="#31a9c4"
+                  color="white"
                   width="full"
                   isLoading={loading}
                 >
@@ -186,7 +187,7 @@ const Home = () => {
         </Stack>
         <Box>
           Register here?{" "}
-          <Link color="teal.500" href="/register">
+          <Link color="#31a9c4" href="/register">
             Sign Up
           </Link>
         </Box>

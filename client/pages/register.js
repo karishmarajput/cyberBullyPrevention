@@ -127,8 +127,8 @@ const Register = () => {
           pt={"10"}
           bgColor={profileColor}
         >
-          <Avatar bg="teal.500" />
-          <Heading color="teal.400">Welcome</Heading>
+          <Avatar bg="#31a9c4" />
+          <Heading color="#31a9c4">Welcome</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={registerUser}>
               <Stack
@@ -219,7 +219,8 @@ const Register = () => {
                   borderRadius={0}
                   type="submit"
                   variant="solid"
-                  colorScheme="teal"
+                  bgColor="#31a9c4"
+                  color="white"
                   width="full"
                   isLoading={loading}
                 >
@@ -231,7 +232,7 @@ const Register = () => {
         </Stack>
         <Box>
           Already have an account?{" "}
-          <Link color="teal.500" href="/">
+          <Link color="#31a9c4" href="/">
             Sign In
           </Link>
         </Box>
