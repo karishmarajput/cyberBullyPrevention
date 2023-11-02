@@ -114,7 +114,7 @@ function Navbar(props) {
       </Text>
       <Container color={"white"} />
 
-      <StatisticsView chatId={props.id} />
+      {/* <StatisticsView chatId={props.id} /> */}
       <IconButton
         variant="link"
         color={color}
@@ -129,7 +129,7 @@ function Navbar(props) {
         icon={<AiFillGithub />}
         onClick={() => {
           window.location.href =
-            "https://github.com/daniel-jebarson/web-chat-app";
+            "https://github.com/karishmarajput/cyberBullyPrevention";
         }}
       />
       <IconButton

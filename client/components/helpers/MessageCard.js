@@ -178,7 +178,7 @@ export default function (props) {
               justifyContent={"center"}
             >
               <Flex
-                flexDirection={props.isUser ? "row-reverse" : "row"}
+                flexDirection={props.isUser ? "column-reverse" : "row"}
                 h="7"
                 pt={"2"}
                 px={"4"}
@@ -189,7 +189,7 @@ export default function (props) {
                   // updated
                   fontSize={"xl"}
                   position={"relative"}
-                  top={"-2"}
+                  // top={"-2"}
                   color={color}
                 >
                   {props.name.slice(0, 25) === props.name
@@ -202,7 +202,7 @@ export default function (props) {
                   top={"0"}
                   color={color}
                 >
-                  {new Date(props.time).toLocaleString()}
+                  {/* {new Date(props.time).toLocaleString()} */}
                   {/* {props.time} */}
                 </Text>
               </Flex>
@@ -251,13 +251,13 @@ export default function (props) {
                 </Text>
                 {props.isUser && !editing ? (
                   <Box>
-                    <IconButton
+                    {/* <IconButton
                       variant="link"
                       color={color}
                       size={"lg"}
                       onClick={() => setEditing(true)}
                       icon={<TbEdit />}
-                    />
+                    /> */}
                     <IconButton
                       variant="link"
                       onClick={() => handleDelete()}
