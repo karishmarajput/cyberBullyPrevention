@@ -104,7 +104,7 @@ const Register = () => {
       {" "}
       <NextSeo
         description={"Register to create the account in Web Chat App"}
-        title={"WebChatApp - Register"}
+        title={"KindNet"}
       />
       <Flex
         color={color}

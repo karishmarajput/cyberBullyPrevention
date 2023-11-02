@@ -30,7 +30,7 @@ function App({ Component, pageProps }) {
             content: "Web-Chat-App",
           },
         ]}
-        title="WebChatApp - Chat"
+        title="KindNet"
         key="Web-Chat-App"
         description="Web-Chat-App done with nextJs where we can create and chat with friends. Realtime updates of message are available with color modes."
         canonical="https://github.com/daniel-jebarson/web-chat-app"
@@ -39,10 +39,7 @@ function App({ Component, pageProps }) {
           description:
             "Web-Chat-App done with nextJs where we can create and chat with friends. Realtime updates of message are available with color modes.",
           type: "website",
-          url: "https://web-chat-app-brown.vercel.app/",
-          authors: [
-            "https://avatars.githubusercontent.com/u/88134306?s=48&v=4",
-          ],
+         
           keywords: "Web-Chat-App",
           tags: [
             "Web-Chat-App",

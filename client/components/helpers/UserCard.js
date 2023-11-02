@@ -95,11 +95,11 @@ function UserCard({ gmail, username, data: user_Data, socket }) {
       />
 
       <Flex flexDirection={"column"} gap={"2"}>
-        <Text fontSize={"xl"} fontStyle={"oblique"} fontWeight={"bold"}>
+        <Text fontSize={"xl"}  fontWeight={"bold"}>
           {username}
         </Text>
 
-        <Text fontSize={"12"} fontWeight={"semibold"} fontStyle={"italic"}>
+        <Text fontSize={"12"} fontWeight={"semibold"} >
           {gmail}
         </Text>
       </Flex>

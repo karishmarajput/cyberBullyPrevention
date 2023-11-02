@@ -31,7 +31,8 @@ function Navbar(props) {
   const spin = keyframes`
   from { transform: rotate(0deg); }
   to { transform: rotate(5400deg); }`;
-  const color = useColorModeValue("#000", "#fff");
+  const color = useColorModeValue("#fff", "#fff");
+  const bgcolor = useColorModeValue("#6DAAE3", "#000");
   const prefersReducedMotion = usePrefersReducedMotion();
   const toast = useToast();
   const animation = prefersReducedMotion
@@ -95,38 +96,40 @@ function Navbar(props) {
 
   return (
     <Flex
-      height={"8vh"}
+      height={"9vh"}
       flexDirection="row"
       alignItems={"center"}
       gap={"4"}
       px={"10"}
-      pt="5"
+  
+      bgColor={bgcolor}
+
     >
-      <AtSignIcon boxSize={"5"} color={color} />
+  
       <Text
         color={color}
         fontSize="20"
         fontWeight={"semibold"}
-        fontStyle="oblique"
+    
         ml="-1.5"
       >
         {props.name}
       </Text>
       <Container color={"white"} />
 
-      <StatisticsView chatId={props.id} />
+      {/* <StatisticsView chatId={props.id} /> */}
       <IconButton
         variant="link"
         color={color}
         size={"lg"}
         onClick={removeFriend}
-        icon={<MdPersonRemoveAlt1 />}
+        icon={<MdPersonRemoveAlt1 fontSize={"1.5rem"}/>}
       />
       <IconButton
         variant="link"
         color={color}
         size={"lg"}
-        icon={<AiOutlineSync />}
+        icon={<AiOutlineSync fontSize={"1.5rem"}/>}
         _focus={{ animation: animation }}
         onClick={() => {
           window.location.href = window.location.href;

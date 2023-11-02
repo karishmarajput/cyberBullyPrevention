@@ -17,9 +17,10 @@ import Axios from "axios";
 // import { socket } from "../../util/socket";
 function MessageBox({ socket }) {
   const dispatch = useDispatch();
-  const color = useColorModeValue("#fff", "#000");
+  const color = useColorModeValue("#fffff", "#00000");
   const bg = useColorModeValue("#187b94", "#fff");
-  const bgBox = useColorModeValue("#383737", "#d8d8d8");
+  const textbox = useColorModeValue("#00000", "#fffff");
+  const bgBox = useColorModeValue("#fff", "#000");
   const toast = useToast();
   const { SETCHAT, ADDMESSAGE } = bindActionCreators(actionCreators, dispatch);
   const [search, setSearch] = useState("");
@@ -80,23 +81,33 @@ function MessageBox({ socket }) {
           onChange={(e) => setSearch(e.target.value)}
           onKeyPress={handleEnter}
           value={search}
-          placeholder="Enter the message here"
-          _placeholder={{ color: color }}
-          color={color}
+          placeholder="Type something..."
+          _placeholder={{ color: textbox }}
+          color={textbox}
           pl="5"
           bgColor={bgBox}
           border={"none"}
           boxShadow="dark-lg"
-          rounded="md"
-          maxHeight={"7vh"}
+          rounded="2xl"
+          maxHeight={"15vh"}
+          height={"8vh"}
         />
-        <InputRightElement>
+        <InputRightElement
+        width ={"4rem"}>
+     
           <IconButton
-            flexGrow={1}
-            colorScheme="green"
+            flexGrow={2}
+            colorScheme="whatsapp"
+            color="black"
+            bgClip={"#fff"}
             aria-label="Get request"
             onClick={handleMessage}
-            icon={<BiSend />}
+            height={"8vh"}
+            top={"6px"}
+            
+            roundedTopRight="2xl"
+            roundedBottomRight="2xl"
+            icon={<BiSend fontSize={"1.5rem"}/>}
           />
         </InputRightElement>
       </InputGroup>

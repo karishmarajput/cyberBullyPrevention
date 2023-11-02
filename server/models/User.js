@@ -17,6 +17,15 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    hits:{
+      type: Number,
+      default:0,
+    },
+    ban:{
+      type: Boolean,
+      default: false,
+      
+    },
     friends: { type: [String], default: [] },
     image: {
       type: String,

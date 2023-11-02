@@ -23,10 +23,10 @@ export default function (props) {
   const [text, setText] = useState(props.message);
   const [updated, setUpdated] = useState(props.updated);
   const color = useColorModeValue("#fff", "#fff");
-  const userbg = useColorModeValue("#31a9c4", "#1c2c3c");
+  const userbg = useColorModeValue("#6DAAE3", "#1c2c3c");
   const userhoverbg = useColorModeValue("#227d99", "#2a3a49");
   const friendhoverbg = useColorModeValue("#18942c", "#09090b");
-  const friendbg = useColorModeValue("#5ecc70", "#161512");
+  const friendbg = useColorModeValue("#6CC55F", "#161512");
   // const deletedbg = useColorModeValue("#000", "#000");
   const { EDITMESSAGE, DELETEMESSAGE } = bindActionCreators(
     actionCreators,
@@ -178,7 +178,7 @@ export default function (props) {
               justifyContent={"center"}
             >
               <Flex
-                flexDirection={props.isUser ? "row-reverse" : "row"}
+                flexDirection={props.isUser ? "column-reverse" : "row"}
                 h="7"
                 pt={"2"}
                 px={"4"}
@@ -189,7 +189,7 @@ export default function (props) {
                   // updated
                   fontSize={"xl"}
                   position={"relative"}
-                  top={"-2"}
+                  // top={"-2"}
                   color={color}
                 >
                   {props.name.slice(0, 25) === props.name
@@ -202,7 +202,7 @@ export default function (props) {
                   top={"0"}
                   color={color}
                 >
-                  {new Date(props.time).toLocaleString()}
+                  {/* {new Date(props.time).toLocaleString()} */}
                   {/* {props.time} */}
                 </Text>
               </Flex>
@@ -251,13 +251,13 @@ export default function (props) {
                 </Text>
                 {props.isUser && !editing ? (
                   <Box>
-                    <IconButton
+                    {/* <IconButton
                       variant="link"
                       color={color}
                       size={"lg"}
                       onClick={() => setEditing(true)}
                       icon={<TbEdit />}
-                    />
+                    /> */}
                     <IconButton
                       variant="link"
                       onClick={() => handleDelete()}
