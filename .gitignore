@@ -16,6 +16,7 @@
 # next.js
 /client/.next/
 /out/
+/modelserv
 
 # production
 /build
