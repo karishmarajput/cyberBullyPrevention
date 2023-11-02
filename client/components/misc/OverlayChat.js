@@ -10,7 +10,7 @@ function OverlayChat() {
       m={"0"}
       opacity={"100"}
       saturate={"60"}
-      bgImage={bgOverlayImage}
+      // bgImage={bgOverlayImage}
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
       alignItems={"stretch"}

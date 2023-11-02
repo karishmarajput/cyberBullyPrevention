@@ -5,7 +5,7 @@ export default function Error() {
   return (
     <>
       <NextSeo
-        title="WebChatApp - 404"
+        title="KindNet - 404"
         description="Sorry this page doesn't exist!"
       />
       <Custom404 />

@@ -290,16 +290,14 @@ function Chat() {
             zIndex={199}
             p={4}
             h={"81px"}
-            borderBottom="1px solid"
-            bgColor={colorMode == "light" ? "#fff" : "#171c1f"}
-            borderRight={`1px solid ${
-              colorMode == "light" ? "#c3cfd7" : "#2D3748"
-            } `}
+           
+            bgColor={colorMode == "light" ? "#D9D9D9" : "#171c1f"}
+            borderRight={"1px solid "}
           >
             <PorfileView username={userData.username} gmail={userData.gmail} />
             <Stack isInline>
               <IconButton
-                size="sm"
+                size="lg"
                 isRound
                 onClick={toggleColorMode}
                 _focus={{ boxShadow: "none" }}
@@ -309,7 +307,7 @@ function Chat() {
               <IconButton
                 icon={<Icon as={FiLogOut} />}
                 _focus={{ boxShadow: "none" }}
-                size="sm"
+                size="lg"
                 onClick={logOut}
                 isRound
               />
@@ -318,8 +316,8 @@ function Chat() {
           <Flex
             direction="column"
             borderRight="1px solid"
-            borderColor={"gray.700"}
-            bg={colorMode == "light" ? "#eff5f5" : "#1b1e20"}
+           
+            bg={colorMode == "light" ? "#D9D9D9" : "#1b1e20"}
             flex="1"
           >
             <Flex direction="column" p={4}>

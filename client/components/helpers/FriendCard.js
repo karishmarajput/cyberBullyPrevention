@@ -10,7 +10,7 @@ import {
 export default function (props) {
   const { colorMode, toggleColorMode } = useColorMode();
   const selected = useColorModeValue("#dee4e7", "#373838");
-  const bg = useColorModeValue("#f9fafa", "#272727");
+  const bg = useColorModeValue("#D9D9D9", "#1B1E20");
   const hover = useColorModeValue("#dee4e7", "#424242");
   const color = useColorModeValue("#000", "#fff");
   return (
@@ -30,7 +30,7 @@ export default function (props) {
         name={props.name}
         src={`https://avatars.dicebear.com/api/bottts/${props.name}.svg`}
       />
-      <Text fontWeight={"bold"} fontSize={"2xl"} color={color}>
+      <Text fontWeight={"semibold"} fontSize={"lg"} color={color}>
         {props.name.slice(0, 25) === props.name
           ? props.name
           : props.name.slice(0, 24) + "..."}
