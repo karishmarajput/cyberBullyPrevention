@@ -128,7 +128,7 @@ const Register = () => {
           bgColor={profileColor}
         >
           <Avatar bg="#31a9c4" />
-          <Heading color="#31a9c4">Welcome</Heading>
+          <Heading color="#31a9c4">KindNet</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={registerUser}>
               <Stack

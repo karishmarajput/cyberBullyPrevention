@@ -26,7 +26,7 @@ import { NextSeo } from "next-seo";
 const Home = () => {
   const color = useColorModeValue("#000", "#fff");
   const bg = useColorModeValue("gray.200", "#2e2b2b");
-  const profileColor = useColorModeValue("whiteAlpha.900", "#31a9c4");
+  const profileColor = useColorModeValue("whiteAlpha.900", "#292626");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
@@ -119,7 +119,7 @@ const Home = () => {
           bgColor={profileColor}
         >
           <Avatar bg="#31a9c4" />
-          <Heading color="#31a9c4">Welcome</Heading>
+          <Heading color="#31a9c4">KindNet</Heading>
           <Box minW={{ base: "90%", md: "468px" }}>
             <form onSubmit={loginUser}>
               <Stack
